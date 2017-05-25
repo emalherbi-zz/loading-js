@@ -66,7 +66,7 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
     if (document.getElementsByClassName('loading-js').length !== 0) {
       loadingjs.animation.cancel();
       //
-      document.getElementsByClassName('loadingjs-out').remove();
+      document.getElementsByClassName('loading-js-out').remove();
       //
       loadingjs.element = null;
       loadingjs.animation = null;
