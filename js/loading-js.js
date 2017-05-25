@@ -19,7 +19,6 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
   }
 })(this, function() {
   var loadingjs = {};
-  loadingjs.version = '1.0.0';
   loadingjs.template = '<div class="loading-js-out"><div class="loading-js"></div></div>';
   loadingjs.element = null;
   loadingjs.animation = null;
