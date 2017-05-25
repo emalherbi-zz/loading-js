@@ -1,5 +1,5 @@
 /*!
- * loading-js v1.0.1 (http://emalherbi.github.io/loading-js/)
+ * loading-js v1.0.2 (http://emalherbi.github.io/loading-js/)
  * Copyright 2010-2017 emalherbi
  * Licensed under MIT (http://en.wikipedia.org/wiki/MIT_License)
  */
@@ -24,7 +24,6 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
   }
 })(this, function() {
   var loadingjs = {};
-  loadingjs.version = '1.0.0';
   loadingjs.template = '<div class="loading-js-out"><div class="loading-js"></div></div>';
   loadingjs.element = null;
   loadingjs.animation = null;
