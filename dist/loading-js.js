@@ -1,5 +1,5 @@
 /*!
- * loading-js v1.0.0 (http://emalherbi.github.io/loading-js/)
+ * loading-js v1.0.1 (http://emalherbi.github.io/loading-js/)
  * Copyright 2010-2017 emalherbi
  * Licensed under MIT (http://en.wikipedia.org/wiki/MIT_License)
  */
@@ -44,13 +44,13 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
   };
   //
   loadingjs.start = function() {
-    if (document.getElementsByClassName('loadingjs').length === 0) {
+    if (document.getElementsByClassName('loading-js').length === 0) {
       loadingjs.element = null;
       loadingjs.animation = null;
       //
       document.body.innerHTML = document.body.innerHTML + loadingjs.template;
       //
-      loadingjs.element = document.getElementsByClassName('loadingjs')[0];
+      loadingjs.element = document.getElementsByClassName('loading-js')[0];
       //
       loadingjs.animation = loadingjs.element.animate([{
           transform: 'rotate(0)'
@@ -69,7 +69,7 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
   };
   //
   loadingjs.done = function() {
-    if (document.getElementsByClassName('loadingjs').length !== 0) {
+    if (document.getElementsByClassName('loading-js').length !== 0) {
       loadingjs.animation.cancel();
       //
       document.getElementsByClassName('loadingjs-out').remove();
